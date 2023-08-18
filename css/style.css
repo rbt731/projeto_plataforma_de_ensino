@@ -1,0 +1,29 @@
+/* NAVBAR */
+
+.btn-roxo{
+    background-color: purple;
+}
+.btn-roxo:hover{
+    background-color: purple;
+}
+
+/* HEADER */
+.w-250{
+    width: 500px;
+}
+
+/* MAIN */
+.w-500{
+    width: 300px;
+}
+
+/* FOOTER */
+.bg-roxo{
+    background-color: purple;
+}
+.icon > a{
+    color: white;
+}
+.icon > a:hover{
+    transform: scale(1.05);
+}

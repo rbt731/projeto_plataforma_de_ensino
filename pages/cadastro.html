@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ensino Online</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ensino Online</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inscrição</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lista.html">Lista de Cursos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-roxo text-white" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container bg-light">
+    <h1 class="text-center my-5">Formulário de Inscrição</h1>
+
+    <form action="#">
+      <!-- CAMPO NOME -->
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label for="nome" class="mb-2">Nome</label>
+          <input type="text" name="nome" id="nome" class="form-control">
+        </div>
+      </section>
+
+      <!-- CAMPO EMAIL -->
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label for="email" class="mb-2">Email</label>
+          <input type="email" name="email" id="email" class="form-control border" placeholder="email@email.com">
+        </div>
+      </section>
+
+      <!-- CAMPO CONFIRMAÇÃO DE EMAIL -->
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label for="confirmar" class="mb-2">Confirmação de Email</label>
+          <input type="text" name="confirmar" id="confirmar" class="form-control bg-secondary-subtle" disabled>
+        </div>
+      </section>
+
+      <!-- CAMPO TIPO PAGAMENTO CARTÃO -->
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label class="col-form-label-lg">Qual é sua forma de pagamento?</label>
+          <select name="trabalho" class="form-select">
+            <option value="">Escolha uma opção...</option>
+            <option value="credito">Crédito</option>
+            <option value="debito">Débito</option>
+          </select>
+        </div>
+
+      </section>
+
+      <!-- CAMPO CARTÃO -->
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label for="nome-cartao" class="mb-2">Insira o nome do cartão</label>
+          <input type="text" name="cartao" id="cartao" class="form-control">
+        </div>
+
+      </section>
+      <section class="row mb-2">
+        <div class="col-md-12">
+          <label for="numcartao" class="mb-2">Número do Cartão</label>
+          <input type="number" name="numcartao" id="numcartao" class="form-control" placeholder="1234 1234 1234 1234">
+        </div>
+      </section>
+
+      <section class="row mb-2">
+        <div class="col-md-3">
+          <label class="mb-2">Mês do cartão</label>
+          <select name="trabalho" class="form-select">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label class="mb-2">Ano do cartão</label>
+          <select name="trabalho" class="form-select">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+            <option value="2033">2033</option>
+            <option value="2034">2034</option>
+          </select>
+        </div>
+
+        <div class="col-md-5">
+          <label for="cvv" class="mb-2">CVV</label>
+          <input type="number" name="cvv" id="cvv" class="form-control" placeholder="123" min="1" max="999">
+        </div>
+
+        
+
+        <!-- CAMPO NIVEL DE CONHECIMENTO -->
+        <section class="row mb-2">
+          <div class="col-md-12">
+            <label for="" class="col-form-label-lg">Qual é seu nível
+              de conhecimento no assunto?</label>
+            <div class="form-check">
+              <input type="radio" name="escolaridade" id="fundamental" value="fundamental" class="form-check-input">
+              <label for="fundamental" class="form-check-label">Iniciante</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="escolaridade" id="fundamental" value="fundamental" class="form-check-input">
+              <label for="fundamental" class="form-check-label">Básico</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="escolaridade" id="fundamental" value="fundamental" class="form-check-input">
+              <label for="fundamental" class="form-check-label">Intermediário</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="escolaridade" id="superior" value="superior" class="form-check-input">
+              <label for="superior" class="form-check-label">Avançado</label>
+            </div>
+          </div>
+        </section>
+
+        <!-- CAMPO COMENTÁRIO -->
+        <section class="row mb-2">
+          <div class="col-md-12">
+            <label for="men" class="mb-2">Comente qual é seu objetivo com o aprendizado?</label>
+            <textarea name="men" id="men" placeholder="descreva brevemente sua opinião" class="form-control re"></textarea>
+
+            <p class="text-end">Total de caracteres restantes: <span id="rest">0</span>/150</p>
+          </div>
+        </section>
+        
+        <!-- CAMPO DE CURSOS -->
+        <section class="row mb-2">
+          <div class="col-md-12">
+            <label for="pesquisa" class="mb-2">Informe qual curso deseja fazer.</label>
+            <input type="text" name="pesquisa" id="pesquisa" class="form-control" placeholder="Pesquisar">
+          </div>
+        </section>
+
+        <div class="col-md-6 mx-auto my-5">
+          <button type="submit" class="btn btn-roxo text-white col-md-12 mb-2">Enviar Formulario</button>
+        </div>
+      </section>
+    </form>
+
+  </main>
+
+  <footer class="container-fluid bg-roxo text-white py-3 mt-5">
+    <section class="d-flex flex-column align-items-center">
+      <div>
+        <p>&copy;2023 Ensino Online</p>
+        <div class="d-flex justify-content-around fs-5 icon">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
